@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/background2">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Diary Project"
+        android:paddingLeft="5dp"
+        android:id="@+id/textView"/>
+    <TextView
+        android:id="@+id/editDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:paddingLeft="5dp"
+        android:textAlignment="textEnd"
+        android:textSize="15dp"
+        />
+</RelativeLayout>
+    <ListView
+        android:id="@+id/lvDiary"
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        >
+
+
+        <Button
+            android:id="@+id/homeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+
+            android:text="HOME"
+            android:fontFamily="casual"/>
+
+        <Button
+            android:id="@+id/writeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_toRightOf="@id/homeBtn"
+            android:layout_marginLeft="10dp"
+            android:text="WRITE"
+            android:fontFamily="casual"/>
+
+        <Button
+            android:id="@+id/sortBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_toLeftOf="@id/homeBtn"
+            android:layout_marginRight="10dp"
+            android:text="SORT"
+            android:fontFamily="casual"/>
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

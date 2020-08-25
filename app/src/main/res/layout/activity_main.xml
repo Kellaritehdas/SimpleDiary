@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    android:background="@drawable/background2"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Diary Project"
+            android:paddingLeft="5dp"
+            android:id="@+id/textView"/>
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editDate"
+            android:layout_marginTop="20dp"
+            android:hint="Headline"
+            android:inputType="textPersonName"
+            android:textAlignment="textStart" />
+
+        <EditText
+            android:id="@+id/editStory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editName"
+            android:hint="Write some text"
+            android:inputType="textMultiLine"
+            android:textAlignment="textStart" />
+
+        <TextView
+            android:id="@+id/editDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:paddingLeft="5dp"
+            android:textAlignment="textEnd"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBack"
+            android:layout_toLeftOf="@id/btnAdd"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:onClick="process"
+
+
+            android:text="BACK"
+            android:fontFamily="casual"/>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:onClick="process"
+
+            android:text="SAVE"
+            android:fontFamily="casual"/>
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/btnAdd"
+
+            android:onClick="process"
+            android:text="VIEW LIST"
+            android:fontFamily="casual"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
